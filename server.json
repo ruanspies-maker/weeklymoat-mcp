@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.weeklymoat/weeklymoat",
+  "title": "WeeklyMoat — Value Investing Signals",
+  "description": "Weekly Graham & Buffett stock signals for AI agents. 966 stocks, 6 markets.",
+  "repository": {
+    "url": "https://github.com/weeklymoat/weeklymoat-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "websiteUrl": "https://weeklymoat.com/api",
+  "license": "MIT",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "weeklymoat-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WEEKLYMOAT_API_KEY",
+          "description": "Your WeeklyMoat API key. Get one free at weeklymoat.com/api-signup.html",
+          "isSecret": true,
+          "isRequired": true,
+          "placeholder": "wm_live_..."
+        }
+      ]
+    }
+  ]
+}

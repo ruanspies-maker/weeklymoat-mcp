@@ -1,0 +1,46 @@
+{
+  "name": "weeklymoat-mcp",
+  "version": "1.0.1",
+  "description": "MCP server for the WeeklyMoat API: weekly value-investing buy signals, watchlist and full screener (966 stocks, 6 markets, Graham & Buffett scores) for Claude and other AI agents.",
+  "type": "module",
+  "bin": {
+    "weeklymoat-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude",
+    "ai-agent",
+    "value-investing",
+    "stock-screener",
+    "graham",
+    "buffett",
+    "finance",
+    "stocks"
+  ],
+  "homepage": "https://weeklymoat.com/api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weeklymoat/weeklymoat-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weeklymoat/weeklymoat-mcp/issues"
+  },
+  "mcpName": "com.weeklymoat/weeklymoat",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.0"
+  }
+}

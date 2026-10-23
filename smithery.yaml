@@ -1,0 +1,23 @@
+name: weeklymoat-mcp
+title: WeeklyMoat — Value Investing Signals
+description: Weekly Graham & Buffett stock signals for AI agents. 966 stocks, 6 markets.
+license: MIT
+homepage: https://weeklymoat.com/api
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      WEEKLYMOAT_API_KEY:
+        type: string
+        description: Your WeeklyMoat API key. Get one free at weeklymoat.com/api-signup.html
+        isSecret: true
+    required:
+      - WEEKLYMOAT_API_KEY
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "weeklymoat-mcp"],
+      env: { WEEKLYMOAT_API_KEY: config.WEEKLYMOAT_API_KEY }
+    })
